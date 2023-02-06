@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --color-accent: #20bb70;
+  --color-accent-light: #f5f9f8;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.img-avatar,
+.img-square {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.bg-accent-light {
+  background-color: var(--color-accent-light);
+}
+
+.fs-sm {
+  font-size: 0.8rem;
+}
+
+.btn {
+  text-transform: inherit;
+  box-shadow: none;
+}
+
+.btn-link {
+  text-decoration: none;
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+.form-sm .form-control {
+  font-size: 0.8rem;
+  padding: 0.4rem 0.75rem;
+}
+
+.form-sm .form-outline .form-control {
+  font-size: 0.8rem;
+  padding: .4rem .75rem;
+}
+
+.form-check-input[type=checkbox]:focus:after,
+.form-check-input[type=checkbox]:checked:after {
+  display: none;
+}
+
+.list-menu {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.list-menu li>a {
+  display: block;
+  text-decoration: none;
+}
+
+.text-light a {
+  color: white;
+}
+
+#map {
+  height: 100px;
+}
+
+.card .img-wrap {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  display: block;
+  border-radius: .25rem .25rem 0 0;
+}
+
+.card .img-wrap .topbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  text-align: left;
+  padding: 10px 15px;
+}
+
+.card .info-wrap {
+  padding: 0.75rem 1rem;
+  overflow: hidden;
+}
+
+[class*=card-farm] a.title {
+  display: block;
+  text-decoration: none;
+}
+
+.card .title {
+  color: #51585e;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.img-upload-wrap .upload-img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: .35rem;
+  border: 1px solid #ccd1d6;
+  overflow: hidden;
+  background: #f8f9fa;
+}
+
+.img-upload-wrap input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.setting-time .day {
+  display: grid;
+  grid-template-columns: 1.5rem auto 6rem 6rem;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: .5rem;
+}
+
+.small-img-group{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 575.98px) {
+  .card-register {
+    border: none;
+    box-shadow: none;
+  }
+
+  section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .img-square {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+
+  .form-sm .form-outline .form-control {
+    font-size: 1rem;
+    padding: .33em .75em;
+  }
+
+  .form-outline .form-control~.form-label {
+    top: 2px;
+  }
+
+  .img-upload-wrap .upload-img {
+    aspect-ratio: 16/9;
+  }
+}
